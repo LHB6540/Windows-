@@ -1,3 +1,15 @@
+---
+title: "关于本项目"
+date: 2020-06-08T01:37:56+08:00
+lastmod: 2020-06-08T01:37:56+08:00
+draft: false
+tags: ["preview", "中文", "tag-1"]
+categories: ["中文"]
+author: "Wikipedia"
+
+contentCopyright: '<a rel="license noopener" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" target="_blank">Creative Commons Attribution-ShareAlike License</a>'
+
+---
 # Windows-computer-maintenance-guide Windows计算机维护指南
 本项目由广州中医药大学学生创新实践基地运维部发起和维护。内容源自运维部义修培训指南,出于隐私等目的，移除了培训指南中的内部规范和章程的部分。    
 ### 内容组成
