@@ -64,7 +64,7 @@ jobs:
     - name: Run SSH command
       uses: garygrossgarten/github-action-ssh@v0.5.0
       with:
-        command: cat /www/hugo/content README.md > /www/hugo/content/about.md && cd /www/hugo && hugo
+        command: cat /www/hugo/content/README.md > /www/hugo/content/about.md && cd /www/hugo && hugo
         host: ${{ secrets.ALIYUN_HOST }}
         username: ${{ secrets.ALIYUN_USER }}
         password: ${{ secrets.ALIYUN_PASSWORD }}
