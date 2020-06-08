@@ -41,6 +41,16 @@ jobs:
         password: ${{ secrets.ALIYUN_PASSWORD }}
         script: bash /root/del.sh
     
+    #copy file to host
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.ALIYUN_HOST }}
+        username: ${{ secrets.ALIYUN_USER }}
+        password: ${{ secrets.ALIYUN_PASSWORD }}
+        source: "./readme.md"
+        target: "/www/hugo/content/post"
+  
     
     
   
