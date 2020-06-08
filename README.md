@@ -1,22 +1,21 @@
 ---
-title: "关于本项目"
-date: 2020-06-08T01:37:56+08:00
-lastmod: 2020-06-08T01:37:56+08:00
-draft: false
-tags: ["preview", "中文", "tag-1"]
-categories: ["中文"]
-author: "Wikipedia"
-
-contentCopyright: '<a rel="license noopener" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" target="_blank">Creative Commons Attribution-ShareAlike License</a>'
+title: "关于"
+date: 2017-08-20T21:38:52+08:00
+lastmod: 2017-08-28T21:41:52+08:00
+menu: "main"
+weight: 50
 
 ---
+
 # Windows-computer-maintenance-guide Windows计算机维护指南
 本项目由广州中医药大学学生创新实践基地运维部发起和维护。内容源自运维部义修培训指南,出于隐私等目的，移除了培训指南中的内部规范和章程的部分。    
 ### 内容组成
 本指南分为三部分：计算机基础认识、基础维护技能和常见问题维护思路及方法   
 其对应的GitHub仓库文件为计算基础认识.md，基础维护技能.md，常见问题维护思路及方法.md
 ### 如何加入本项目为本项目做贡献
-一、本项目内容使用两种方法呈现：GitHub仓库的Markdown文件和基于Markdown文件借助Hexo生成的静态网页。本项目将借助GitHub Actions进行网页的自动更新和发布
+一、本项目内容使用两种方法呈现：   
+GitHub仓库的Markdown文件    
+基于Markdown文件借助Hugo生成的静态网页。本项目将借助GitHub Actions进行CI/CD   
 
 二、我们期望的所贡献的内容包括但不限于以下内容：   
 1、对于项目已有内容的错误之处的勘正     
@@ -29,4 +28,4 @@ contentCopyright: '<a rel="license noopener" href="https://en.wikipedia.org/wiki
 2、对于新的未解决的问题，请在Issues中发布您的问题    
 3、在进行贡献过程中，对于内容的更新请遵循既有的格式，对于不符合格式的贡献，我们将不予以合并分支或将在合并后进行修改
 ### 感谢您的贡献
-我们期待您加入本项目并为本项目做出贡献，发挥社会化编程的精神。
+我们期待您加入本项目并为本项目做出贡献。
