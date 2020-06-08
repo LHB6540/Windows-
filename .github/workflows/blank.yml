@@ -48,7 +48,7 @@ jobs:
         host: ${{ secrets.ALIYUN_HOST }}
         username: ${{ secrets.ALIYUN_USER }}
         password: ${{ secrets.ALIYUN_PASSWORD }}
-        source: "./readme.md"
+        source: "./README.md"
         target: "/www/hugo/content/post"
   
     
