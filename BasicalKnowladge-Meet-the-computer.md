@@ -94,7 +94,7 @@ Windows使用与日常维护交流Ⅱ群：982188851
 
 <center class="half">
   <a href="https://github.com/lhb6540">
-    <img src="https://avatars3.githubusercontent.com/u/41095303?s=460&v=4" width="30"/>
+    <img src="http://47.107.149.229:8080/avatar.PNG" width="30"/>
   </a>
 </center>
 
