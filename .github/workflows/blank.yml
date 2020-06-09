@@ -51,14 +51,14 @@ jobs:
         source: "./README.md"
         target: "/www/hugo/content/"
     
-    #- name: copy file via ssh password
-     # uses: appleboy/scp-action@master
-      #with:
-       # host: ${{ secrets.ALIYUN_HOST }}
-        #username: ${{ secrets.ALIYUN_USER }}
-        #password: ${{ secrets.ALIYUN_PASSWORD }}
-        #source: "./BasicKnowledge.md ./BasicSkills.md ./Issues.md"       
-        #target: "/www/hugo/content/"
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.ALIYUN_HOST }}
+        username: ${{ secrets.ALIYUN_USER }}
+        password: ${{ secrets.ALIYUN_PASSWORD }}
+        source: "./BasicKnowledge*"       
+        target: "/www/hugo/content/post"
     
     #shell
     - name: Run SSH command
