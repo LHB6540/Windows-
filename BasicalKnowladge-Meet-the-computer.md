@@ -92,7 +92,7 @@ Windows使用与日常维护交流Ⅱ群：982188851
 
 ## 贡献者
 <center class="half">
-  <a href="www.baidu.com">
+  <a href="https://github.com/LHB6540">
     <img src="http://47.107.149.229:8080/avatar.PNG" width="30"/>
   </a>
 </center>
