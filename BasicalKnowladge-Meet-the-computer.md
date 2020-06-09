@@ -91,11 +91,6 @@ Windows使用与日常维护交流Ⅱ群：982188851
 
 
 ## 贡献者
-
-<center class="half">
-  <a href="https://github.com/lhb6540">
-    <img src="http://47.107.149.229:8080/avatar.PNG" width="30"/>
-  </a>
-</center>
+<img src="http://47.107.149.229:8080/avatar.PNG" style="zoom:5%;" />   <img src="http://47.107.149.229:8080/avatar.PNG" style="zoom:5%;" />
 
 
