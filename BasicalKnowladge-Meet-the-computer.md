@@ -91,6 +91,6 @@ Windows使用与日常维护交流Ⅱ群：982188851
 
 
 ## 贡献者
-<img src="http://47.107.149.229:8080/avatar.PNG" width="50" />   <img src="http://47.107.149.229:8080/avatar.PNG" width="50" />
+<img src="http://47.107.149.229:8080/avatar.PNG" width="50px" />   <img src="http://47.107.149.229:8080/avatar.PNG" width="50px" />
 
 
