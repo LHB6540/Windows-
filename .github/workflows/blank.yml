@@ -24,15 +24,14 @@ jobs:
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
       
     #- name: test
-     # run: ssh ec2-user@18.163.215.160 'touch atsetfile'
-    - name: ls
-      run: ls
+   # run: ssh ec2-user@18.163.215.160 'touch atsetfile'
     
-    - name: backup file
-      run: ssh ec2-user@18.163.215.160 'sudo tar -cvf hugobackup/hugo_$(date "+%Y-%m-%d_%H:%M:%S").tar.gz /www/hugo/content && sudo rm -rf /www/hugo/content ' 
     
-    - name: scp
-      run: scp ./content ec2-user@18.163.215.160:/www/hugo
+    #- name: backup file
+   # run: ssh ec2-user@18.163.215.160 'sudo tar -cvf hugobackup/hugo_$(date "+%Y-%m-%d_%H:%M:%S").tar.gz /www/hugo/content && sudo rm -rf /www/hugo/content ' 
+    
+    - name: rsync
+      run: rsync -a --delete content ec2-user@18.163.215.160:/www/hugo/content
     
     - name: make 
       run: ssh ec2-user@18.163.215.160 'cd /www/hugo && sudo ./hugo'
