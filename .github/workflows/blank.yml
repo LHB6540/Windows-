@@ -16,55 +16,12 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@master
-
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo start,working
-
-    # Runs a set of commands using the runners shell
-    #- name: Run a multi-line script
-    # run: |
-    #    echo Add other actions to build,
-    #    echo test, and deploy your project.
-
-    #delete host file
-    - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@master
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
       with:
-        host: ${{ secrets.ALIYUN_HOST }}
-        username: ${{ secrets.ALIYUN_USER }}
-        password: ${{ secrets.ALIYUN_PASSWORD }}
-        script: bash /root/del.sh
-    
-    #copy file to host
-    - name: copy file via ssh password
-      uses: appleboy/scp-action@master
-      with:
-        host: ${{ secrets.ALIYUN_HOST }}
-        username: ${{ secrets.ALIYUN_USER }}
-        password: ${{ secrets.ALIYUN_PASSWORD }}
-        source: "./README.md"
-        target: "/www/hugo/content/"
-    
-    - name: copy file via ssh password
-      uses: appleboy/scp-action@master
-      with:
-        host: ${{ secrets.ALIYUN_HOST }}
-        username: ${{ secrets.ALIYUN_USER }}
-        password: ${{ secrets.ALIYUN_PASSWORD }}
-        source: "./BasicalKnowladge*"       
-        target: "/www/hugo/content/post"
-    
-    #shell
-    - name: Run SSH command
-      uses: garygrossgarten/github-action-ssh@v0.5.0
-      with:
-        command: cat /www/hugo/content/README.md > /www/hugo/content/about.md && cd /www/hugo && hugo
-        host: ${{ secrets.ALIYUN_HOST }}
-        username: ${{ secrets.ALIYUN_USER }}
-        password: ${{ secrets.ALIYUN_PASSWORD }}
+      key: ${{ secrets.SSH_KEY }}
+      known_hosts: ${{ secrets.KNOWN_HOSTS }}
+      
+    - name: test
+      run: ssh ec2-user@18.163.215.160 'touch atsetfile'
