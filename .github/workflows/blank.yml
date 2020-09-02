@@ -25,6 +25,8 @@ jobs:
       
     #- name: test
      # run: ssh ec2-user@18.163.215.160 'touch atsetfile'
+    - name: ls
+      run: pwd&&ls
     
     - name: backup file
       run: ssh ec2-user@18.163.215.160 'sudo tar -cvf hugobackup/hugo_$(date "+%Y-%m-%d_%H:%M:%S").tar.gz /www/hugo/content && sudo rm -rf /www/hugo/content ' 
