@@ -26,8 +26,11 @@ jobs:
     #- name: test
      # run: ssh ec2-user@18.163.215.160 'touch atsetfile'
     
-    - name: rsync file
-      run: rsync  -a --delete ./content ec2-usr@18.163.215.160:/www/hugo/content
+    - name: backup file
+      run: ssh ec2-user@18.163.215.160 'sudo tar -cvf hugobackup/hugo_$(date "+%Y-%m-%d_%H:%M:%S").tar.gz /www/hugo/content && sudo rm -rf /www/hugo/content ' 
+    
+    - name: scp
+      run: scp ./content ec2-user@18.163.215.160:/www/hugo
     
     - name: make 
       run: ssh ec2-user@18.163.215.160 'cd /www/hugo && sudo ./hugo'
