@@ -24,4 +24,4 @@ jobs:
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
       
     - name: test
-      run: ssh-keygen -R 18.163.215.160 && ssh ec2-user@18.163.215.160 'touch atsetfile'
+      run: ssh ec2-user@18.163.215.160 'touch atsetfile'
