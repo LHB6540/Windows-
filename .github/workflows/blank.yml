@@ -31,7 +31,7 @@ jobs:
    # run: ssh ec2-user@18.163.215.160 'sudo tar -cvf hugobackup/hugo_$(date "+%Y-%m-%d_%H:%M:%S").tar.gz /www/hugo/content && sudo rm -rf /www/hugo/content ' 
     
     - name: rsync
-      run: rsync -a --delete ./content ec2-user@18.163.215.160:/www/hugo/content
+      run: rsync -a --delete ./ ec2-user@18.163.215.160:/www/test
     
     - name: make 
       run: ssh ec2-user@18.163.215.160 'cd /www/hugo && sudo ./hugo'
