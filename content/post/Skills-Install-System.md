@@ -58,6 +58,8 @@ GPT分区实现了：
 2. 对分区信息的备份
 3. 支持更大的硬盘容量，理论最大支持8ZB(1ZB=2^30TB)
 
+![](https://qkmyog.bn.files.1drv.com/y4mqX3DQLM2MOC-Sd2Sxzw2CqIQIQ3b7aVwun35d2RksJkd_GOb7dsC1dLahl69NjR3m85whjHAKq6rtGm8FqIjTKtPA1sOWCC6jbO-P8AYHyCb-5j97O1TtIMj6B2krs-A96P4FDO6tLnvIYZSzLXubXGs18Nqcx_u1RduI9UeTtALv05zFo_RbhotMA-d5jy16mkg7X9yyo70vBo7MTbCog?width=275&height=378&cropmode=none)
+
 ### 引导方式和磁盘分区表的搭配
 
 ​	前面讲述到根据BIOS或UEFI(后文统一简写为BIOS/UEFI)的设置来选择用于启动系统的磁盘，至此BIOS/UEFI的工作已经接近结束。根据BIOS/UEFI的配置的Legacy或UEFI引导方式。如果我们曾经有过安装系统的经验，常常会听到这样的说法：UEFI搭配GPT，Legacy搭配MBR。这样的描述并不准确，听起来似乎Legacy只认识MBR分区格式的磁盘而UEFI只认识GPT分区格式的磁盘。如果这样，GUID分区中的LBA0兼容模块就没有存在的必要了。
@@ -158,6 +160,8 @@ https://msdn.itellyou.cn/
   3、在主界面，点击右下角其他安装方式右侧的安装PE到U盘
 
   4、如图配置
+
+  ![](https://9uk3fw.bn.files.1drv.com/y4mXDFUqre0o-H_oWDawLms9kHyFG7u-njqJDJzfjat8TzGg1nsWk8w2GuU1ec1uH7nTMSA7RjGe88lHDs0OaXTpPErPYgAJcOFSu7EqdMiFrd6ZyqnzGBudz2vYfR5dxyJl2b5OiemH57sLoBCzprXljqQBCzaTuzAA6Kus6Pedy5hfo1UVnVRUCkJS87OAD1c6xQm56764S7sDetV-Oaehw?width=552&height=343&cropmode=none)
 
   5、点击立即安装进U盘
 
