@@ -25,7 +25,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
     
-    
     - name: rsync
       run: rsync -a --delete content/ lhb6540@${{ secrets.HOST }}:/www/hugo/content/
     
