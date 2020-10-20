@@ -27,7 +27,7 @@ jobs:
     
     
     - name: rsync
-      run: rsync -a --delete content/ ec2-user@${{ secrets.HOST }}:/www/hugo/content/
+      run: rsync -a --delete content/ lhb6540@${{ secrets.HOST }}:/www/hugo/content/
     
     - name: make 
       run: ssh lhb6540@${{ secrets.HOST }} 'cd /www/hugo && sudo ./hugo'
