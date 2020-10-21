@@ -31,4 +31,3 @@ jobs:
     - name: make 
       run: ssh lhb6540@${{ secrets.HOST }} 'cd /www/hugo && sudo ./hugo'
      
-      
